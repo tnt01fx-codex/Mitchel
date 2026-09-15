@@ -8,10 +8,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Michelle Arcade">
 <title>Michelle Arcade</title>
-<style>
-:root{--ink:#221f1b;--cream:#fff7ea;--card:#fffdf9;--line:#eadcc9;--blue:#38a9ff;--blue2:#0f78d8;--gold:#ffb326;--rose:#ff6f7d;--muted:#7c746a}
-*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--cream);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Rounded","SF Pro Display",system-ui,sans-serif;color:var(--ink);overscroll-behavior:none}button{font:inherit;color:inherit}.app{height:100dvh;min-height:100svh;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);display:flex;justify-content:center}.shell{position:relative;width:min(100%,520px);height:100%;overflow:hidden;background:linear-gradient(#fffdf9,#fff4df)}.screen{position:absolute;inset:0;display:none}.screen.active{display:block}.home{overflow:auto;padding:28px 18px 24px}.eyebrow{font-size:12px;font-weight:900;letter-spacing:.17em;opacity:.5}.home h1{font-size:clamp(38px,11vw,58px);line-height:.9;letter-spacing:-.05em;margin:10px 0 8px}.sub{margin:0;max-width:390px;font-size:14px;line-height:1.5;color:var(--muted)}.hero{height:min(34vh,300px);display:grid;place-items:center;position:relative}.hero:after{content:"";position:absolute;bottom:20px;width:60%;height:25px;border-radius:50%;background:rgba(75,45,20,.12);filter:blur(8px)}.sprite{position:relative;z-index:2;background-image:url('assets/michelle.webp');background-repeat:no-repeat;background-size:400% 400%;width:220px;height:220px;filter:drop-shadow(0 11px 8px rgba(65,39,16,.11))}.pose-sit{background-position:100% 0}.mode-list{display:grid;gap:12px}.mode{border:1px solid var(--line);background:rgba(255,255,255,.88);box-shadow:0 15px 34px rgba(77,48,22,.10);border-radius:22px;padding:15px;text-align:left;display:grid;grid-template-columns:54px 1fr auto;gap:12px;align-items:center}.mode:active{transform:scale(.985)}.mode .icon{width:54px;height:54px;border-radius:17px;display:grid;place-items:center;font-size:29px;background:#e6f5ff}.mode:nth-child(2) .icon{background:#fff0cf}.mode strong{font-size:18px;display:block;margin-bottom:2px}.mode small{font-size:12px;line-height:1.35;color:var(--muted)}.chev{font-size:26px;opacity:.3}.game{background:#f7f2e8}.game canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none}.hud{position:absolute;z-index:5;top:0;left:0;right:0;padding:10px 11px;display:grid;grid-template-columns:48px 1fr 48px;align-items:center;background:linear-gradient(to bottom,rgba(255,253,249,.96),rgba(255,253,249,.70),transparent);pointer-events:none}.hud button{pointer-events:auto;border:1px solid rgba(0,0,0,.07);background:rgba(255,255,255,.9);width:44px;height:44px;border-radius:15px;font-size:21px;box-shadow:0 7px 20px rgba(0,0,0,.07)}.score{text-align:center;line-height:1}.score b{font-size:24px;display:block}.score span{font-size:10px;font-weight:900;letter-spacing:.13em;opacity:.48}.lives{text-align:center;font-size:18px;white-space:nowrap}.hint{position:absolute;z-index:5;left:50%;bottom:max(20px,calc(env(safe-area-inset-bottom) + 12px));transform:translateX(-50%);background:rgba(255,255,255,.87);border:1px solid rgba(0,0,0,.06);box-shadow:0 8px 26px rgba(0,0,0,.08);padding:10px 16px;border-radius:999px;font-size:12px;font-weight:850;white-space:nowrap;pointer-events:none}.toast{position:absolute;z-index:7;left:50%;top:24%;transform:translate(-50%,-50%) scale(.82);font-size:34px;font-weight:950;letter-spacing:-.04em;opacity:0;pointer-events:none;text-shadow:0 3px white;transition:.14s}.toast.show{opacity:1;transform:translate(-50%,-50%) scale(1)}.overlay{position:absolute;inset:0;z-index:10;display:none;place-items:center;padding:24px;background:rgba(255,247,234,.88);backdrop-filter:blur(10px)}.overlay.show{display:grid}.panel{width:min(100%,360px);padding:24px;border-radius:28px;background:white;border:1px solid var(--line);text-align:center;box-shadow:0 24px 70px rgba(73,45,18,.18)}.panel h2{font-size:30px;margin:2px 0 6px}.panel p{margin:0 0 18px;color:var(--muted)}.primary,.secondary{border-radius:16px;font-weight:850;padding:13px 20px}.primary{border:0;background:var(--ink);color:white;min-width:150px}.secondary{display:block;margin:10px auto 0;border:1px solid var(--line);background:white}.round{position:absolute;z-index:5;top:78px;left:50%;transform:translateX(-50%);font-size:11px;font-weight:900;letter-spacing:.12em;background:rgba(255,255,255,.72);padding:7px 10px;border-radius:999px}.hidden{display:none!important}@media(min-width:600px){.shell{height:calc(100% - 24px);margin:12px 0;border-radius:30px;box-shadow:0 28px 80px rgba(63,37,13,.15)}}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="app"><main class="shell">
@@ -19,16 +16,36 @@
   <div class="eyebrow">TNT × MICHELLE</div>
   <h1>Michelle<br>Arcade</h1>
   <p class="sub">เกมสั้น ๆ เล่นด้วยนิ้วเดียวบน iPhone — ตบบอลให้ทัน แล้วกะจังหวะโดดขึ้นโต๊ะหลบมือ</p>
-  <div class="hero"><div class="sprite pose-sit" aria-label="Michelle"></div></div>
-  <div class="mode-list">
+  <div class="hero">
+    <svg class="cat-svg" viewBox="0 0 280 260" aria-label="Michelle the tabby cat">
+      <ellipse cx="140" cy="238" rx="80" ry="12" fill="#6b431f" opacity=".13"/>
+      <path d="M82 151c0-53 28-86 60-86s60 33 60 86v47c0 31-22 45-60 45s-60-14-60-45z" fill="#aa7443" stroke="#5b3b25" stroke-width="3"/>
+      <path d="M96 173c15 21 24 31 46 31 23 0 34-12 48-33v46c-13 18-29 26-48 26-21 0-37-7-48-25z" fill="#fff8ee"/>
+      <path d="M92 61L67 20l46 26M190 61l25-41-46 26" fill="#a56f41" stroke="#5b3b25" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M83 46L73 29l26 15M201 46l10-17-26 15" fill="#efb9ad"/>
+      <ellipse cx="142" cy="93" rx="65" ry="58" fill="#b67b45" stroke="#5b3b25" stroke-width="3"/>
+      <path d="M142 42l-11 25m11-25 11 25M108 50l13 24M176 50l-13 24" stroke="#5d3d27" stroke-width="5" stroke-linecap="round"/>
+      <path d="M88 88l26 7M85 104l30 0M196 88l-26 7M199 104l-30 0" stroke="#5d3d27" stroke-width="4" stroke-linecap="round"/>
+      <ellipse cx="115" cy="91" rx="13" ry="17" fill="#c7d76b" stroke="#4b3825" stroke-width="3"/><ellipse cx="169" cy="91" rx="13" ry="17" fill="#c7d76b" stroke="#4b3825" stroke-width="3"/>
+      <ellipse cx="116" cy="92" rx="5" ry="11" fill="#162218"/><ellipse cx="168" cy="92" rx="5" ry="11" fill="#162218"/><circle cx="111" cy="86" r="3" fill="#fff"/><circle cx="163" cy="86" r="3" fill="#fff"/>
+      <path d="M120 116c7-7 37-7 44 0v16c-5 12-15 18-22 18s-17-6-22-18z" fill="#fff8ee"/>
+      <path d="M134 116q8-8 16 0-8 9-16 0" fill="#f3a4a8" stroke="#7a4b45" stroke-width="2"/>
+      <path d="M142 124v8m0 0c-7 5-12 4-17 1m17-1c7 5 12 4 17 1" stroke="#6a4636" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M87 176l-19 28c-7 11 2 24 15 20l24-8M197 176l18 28c7 11-2 24-15 20l-23-8" fill="#fff8ee" stroke="#5b3b25" stroke-width="3"/>
+      <path d="M94 149l24 10M190 149l-24 10M92 164l24 9M192 164l-24 9" stroke="#5d3d27" stroke-width="5" stroke-linecap="round"/>
+      <path d="M201 196c39 2 50 19 34 36-12 12-38 9-51 4" fill="none" stroke="#7a4e2c" stroke-width="17" stroke-linecap="round"/>
+      <path d="M221 204l15 8m-28 8 18 9" stroke="#3f2a1d" stroke-width="6" stroke-linecap="round"/>
+    </svg>
+  </div>
+  <div class="modes">
     <button class="mode" data-game="ball"><div class="icon">🔵</div><div><strong>Blue Ball Bash</strong><small>แตะหน้าจอให้มิเชลตบลูกบอลสีฟ้า อย่าให้ตกพื้นครบ 3 ครั้ง</small></div><div class="chev">›</div></button>
-    <button class="mode" data-game="jump"><div class="icon">💻</div><div><strong>Notebook Ninja</strong><small>แตะเพื่อโดดขึ้นโต๊ะที่มี notebook และหลบมือที่กำลังจะตี</small></div><div class="chev">›</div></button>
+    <button class="mode" data-game="jump"><div class="icon">💻</div><div><strong>Notebook Ninja</strong><small>แตะเพื่อโดดขึ้นโต๊ะที่มี notebook และหลบมือที่จะตี</small></div><div class="chev">›</div></button>
   </div>
 </section>
 <section id="ball" class="screen game">
   <canvas id="ballCanvas"></canvas>
   <div class="hud"><button class="back" aria-label="Back">‹</button><div class="score"><b id="ballScore">0</b><span>SCORE</span></div><div class="lives" id="ballLives">♥♥♥</div></div>
-  <div class="hint">แตะตอนบอลเข้าระยะมิเชล</div><div id="ballToast" class="toast">HIT!</div>
+  <div class="hint">แตะตอนบอลเข้าใกล้มิเชล</div><div id="ballToast" class="toast">HIT!</div>
   <div id="ballOver" class="overlay"><div class="panel"><h2>Game Over</h2><p id="ballSummary"></p><button id="ballRetry" class="primary">เล่นอีกครั้ง</button><button class="secondary back">กลับหน้าแรก</button></div></div>
 </section>
 <section id="jump" class="screen game">
@@ -38,63 +55,5 @@
   <div id="jumpOver" class="overlay"><div class="panel"><h2>โดนจับได้!</h2><p id="jumpSummary"></p><button id="jumpRetry" class="primary">ลองใหม่</button><button class="secondary back">กลับหน้าแรก</button></div></div>
 </section>
 </main></div>
-<script>
-(()=>{
-'use strict';
-const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
-const sprite=new Image(); sprite.src='assets/michelle.webp';
-let current='home';
-const screens={home:$('#home'),ball:$('#ball'),jump:$('#jump')};
-function show(name){Object.values(screens).forEach(x=>x.classList.remove('active'));screens[name].classList.add('active');current=name;if(name==='ball')startBall();if(name==='jump')startJump()}
-$$('[data-game]').forEach(b=>b.addEventListener('click',()=>show(b.dataset.game)));
-$$('.back').forEach(b=>b.addEventListener('click',()=>{stopBall();stopJump();show('home')}));
-function toast(el,text){el.textContent=text;el.classList.remove('show');void el.offsetWidth;el.classList.add('show');setTimeout(()=>el.classList.remove('show'),430)}
-function lives(el,n){el.textContent='♥'.repeat(n)+'♡'.repeat(Math.max(0,3-n))}
-function fit(canvas){const r=canvas.getBoundingClientRect(),d=Math.min(2,window.devicePixelRatio||1);canvas.width=Math.round(r.width*d);canvas.height=Math.round(r.height*d);const c=canvas.getContext('2d');c.setTransform(d,0,0,d,0,0);return {ctx:c,w:r.width,h:r.height}}
-function poseRect(name){const map={stand:[0,0],blink:[1,0],lookup:[2,0],sit:[3,0],walk1:[0,1],walk2:[1,1],walk3:[2,1],walk4:[3,1],paw:[0,2],jump:[1,2],surprise:[2,2],loaf:[3,2],stretch:[0,3],sleep:[1,3],roll:[2,3],sidesit:[3,3]};const [cx,cy]=map[name]||map.sit;return [cx*256,cy*256,256,256]}
-function drawCat(ctx,pose,x,y,size,flip=false,rot=0,alpha=1){if(!sprite.complete)return;const [sx,sy,sw,sh]=poseRect(pose);ctx.save();ctx.globalAlpha=alpha;ctx.translate(x+size/2,y+size/2);ctx.rotate(rot);ctx.scale(flip?-1:1,1);ctx.drawImage(sprite,sx,sy,sw,sh,-size/2,-size/2,size,size);ctx.restore()}
-function rounded(ctx,x,y,w,h,r,fill){ctx.beginPath();ctx.roundRect(x,y,w,h,r);ctx.fillStyle=fill;ctx.fill()}
-function tone(freq=440,d=.05,type='sine'){try{const A=window.AudioContext||window.webkitAudioContext;if(!A)return;window._ac=window._ac||new A();const a=window._ac,o=a.createOscillator(),g=a.createGain();o.type=type;o.frequency.value=freq;g.gain.setValueAtTime(.045,a.currentTime);g.gain.exponentialRampToValueAtTime(.001,a.currentTime+d);o.connect(g).connect(a.destination);o.start();o.stop(a.currentTime+d)}catch{}}
-
-/* BLUE BALL */
-const bc=$('#ballCanvas'),bs=$('#ballScore'),bl=$('#ballLives'),bt=$('#ballToast'),bo=$('#ballOver');
-let bRun=false,bRAF=0,bx=0,by=0,bvx=0,bvy=0,bScore=0,bLives=3,bLast=0,bSlap=0;
-function resetBall(){const {w,h}=fit(bc);bx=w*.22+Math.random()*w*.56;by=h*.2;bvx=(Math.random()<.5?-1:1)*180;bvy=-80}
-function startBall(){stopBall();bo.classList.remove('show');bScore=0;bLives=3;bs.textContent='0';lives(bl,3);fit(bc);resetBall();bRun=true;bLast=performance.now();bRAF=requestAnimationFrame(ballLoop)}
-function stopBall(){bRun=false;cancelAnimationFrame(bRAF)}
-function ballLoop(now){if(!bRun)return;const {ctx,w,h}=fit(bc),dt=Math.min(.025,(now-bLast)/1000||.016);bLast=now;bvy+=460*dt;bx+=bvx*dt;by+=bvy*dt;const r=23;if(bx<r){bx=r;bvx=Math.abs(bvx)}if(bx>w-r){bx=w-r;bvx=-Math.abs(bvx)}if(by<84+r){by=84+r;bvy=Math.abs(bvy)*.8}
-if(by>h-r-5){bLives--;lives(bl,bLives);tone(130,.08,'square');toast(bt,'MISS');if(bLives<=0){endBall();return}by=h*.28;bx=w*.2+Math.random()*w*.6;bvy=-220;bvx=(Math.random()<.5?-1:1)*(170+bScore*6)}
-ctx.clearRect(0,0,w,h);const floor=h*.72;const sky=ctx.createLinearGradient(0,0,0,floor);sky.addColorStop(0,'#dff4ff');sky.addColorStop(1,'#f7fbff');ctx.fillStyle=sky;ctx.fillRect(0,0,w,floor);ctx.fillStyle='#ead0a5';ctx.fillRect(0,floor,w,h-floor);ctx.fillStyle='#d2ad77';ctx.fillRect(0,floor,w,5);ctx.globalAlpha=.15;ctx.fillStyle='#2876a8';ctx.beginPath();ctx.ellipse(w*.5,h*.89,92,17,0,0,Math.PI*2);ctx.fill();ctx.globalAlpha=1;
-const catSize=Math.min(220,w*.48),catX=w*.5-catSize/2,catY=h-catSize*.87;drawCat(ctx,bSlap>now?'paw':'sit',catX,catY,catSize,false,bSlap>now?-.05:0);ctx.strokeStyle='rgba(30,140,220,.20)';ctx.lineWidth=2;ctx.setLineDash([7,8]);ctx.beginPath();ctx.ellipse(w*.5,h*.74,100,72,0,0,Math.PI*2);ctx.stroke();ctx.setLineDash([]);
-const grd=ctx.createRadialGradient(bx-8,by-9,4,bx,by,r);grd.addColorStop(0,'#d6f3ff');grd.addColorStop(.28,'#54bdff');grd.addColorStop(1,'#0877c8');ctx.fillStyle=grd;ctx.beginPath();ctx.arc(bx,by,r,0,Math.PI*2);ctx.fill();bRAF=requestAnimationFrame(ballLoop)}
-function slap(){if(!bRun)return;const r=bc.getBoundingClientRect(),w=r.width,h=r.height;const dx=bx-w*.5,dy=by-h*.74,dist=Math.hypot(dx,dy);bSlap=performance.now()+160;if(dist<125&&by>h*.58){bScore++;bs.textContent=bScore;bvy=-(300+Math.min(170,bScore*9));bvx=(dx===0?(Math.random()<.5?-1:1):Math.sign(dx))*(180+Math.min(230,bScore*12));toast(bt,bScore%5===0?'NICE!':'HIT!');tone(620+Math.min(500,bScore*18),.045,'triangle')}else{toast(bt,'SWISH');tone(250,.035,'square')}}
-function endBall(){bRun=false;cancelAnimationFrame(bRAF);const best=Math.max(bScore,+(localStorage.michelleBallBest||0));localStorage.michelleBallBest=best;$('#ballSummary').textContent=`Score ${bScore} · Best ${best}`;bo.classList.add('show')}
-function tap(el,fn){if(window.PointerEvent)el.addEventListener('pointerdown',e=>{e.preventDefault();fn(e)},{passive:false});else el.addEventListener('touchstart',e=>{e.preventDefault();fn(e)},{passive:false})}
-tap(bc,slap);$('#ballRetry').addEventListener('click',startBall);
-
-/* NOTEBOOK NINJA */
-const jc=$('#jumpCanvas'),js=$('#jumpScore'),jl=$('#jumpLives'),jt=$('#jumpToast'),jo=$('#jumpOver');
-let jRun=false,jRAF=0,jScore=0,jLives=3,jRound=1,jJump=false,jJumpStart=0,jStrike='idle',jStrikeT=0,jNext=0,jLast=0,jHit=false;
-function startJump(){stopJump();jo.classList.remove('show');jScore=0;jLives=3;jRound=1;js.textContent='0';lives(jl,3);$('#roundLabel').textContent='ROUND 1';fit(jc);jRun=true;jLast=performance.now();scheduleHand(jLast);jRAF=requestAnimationFrame(jumpLoop)}
-function stopJump(){jRun=false;cancelAnimationFrame(jRAF)}
-function scheduleHand(now){const wait=Math.max(620,1450-jRound*58)+Math.random()*Math.max(360,760-jRound*20);jStrike='idle';jNext=now+wait;jStrikeT=0;jHit=false}
-function handGeom(w,h,now){let y=-h*.26,rot=0;if(jStrike==='warning'){const t=(now-jStrikeT)/Math.max(220,520-jRound*16);y=-h*.19+Math.sin(t*18)*4;rot=Math.sin(t*20)*.04}else if(jStrike==='strike'){const t=Math.min(1,(now-jStrikeT)/390);const s=t<.52?t/.52:(1-t)/.48;y=-h*.17+s*h*.56;rot=-.08*s}return {x:w*.38,y,wid:w*.28,hei:h*.30,rot}}
-function drawHand(ctx,g){ctx.save();ctx.translate(g.x+g.wid/2,g.y);ctx.rotate(g.rot);const skin='#ffc29a',edge='#d98f68';ctx.fillStyle=skin;ctx.strokeStyle=edge;ctx.lineWidth=2.5;rounded(ctx,-g.wid*.23,g.hei*.30,g.wid*.55,g.hei*.46,g.wid*.18,skin);ctx.strokeRect(9999,9999,0,0);for(let i=0;i<4;i++){ctx.beginPath();ctx.roundRect(-g.wid*.27+i*g.wid*.145,g.hei*(.02+i*.01),g.wid*.14,g.hei*(.42-i*.025),g.wid*.07);ctx.fill();ctx.stroke()}ctx.beginPath();ctx.roundRect(-g.wid*.37,g.hei*.37,g.wid*.19,g.hei*.33,g.wid*.09);ctx.fill();ctx.stroke();ctx.restore()}
-function catJumpGeom(w,h,now){const floorY=h*.78,tableY=h*.49,size=Math.min(190,w*.40);if(!jJump)return{x:w*.06,y:floorY-size*.64,size,p:0,pose:'lookup',rot:0};const dur=Math.max(690,940-jRound*11),p=Math.min(1,(now-jJumpStart)/dur),x=w*.06+(w*.62)*p,base=floorY-size*.64+(tableY-floorY+size*.08)*p,arc=Math.sin(Math.PI*p)*h*.28,y=base-arc;return{x,y,size,p,pose:'jump',rot:(-.12+.26*p)}}
-function overlap(a,b,pad=0){return !(a.x+a.w-pad<b.x+pad||a.x+pad>b.x+b.w-pad||a.y+a.h-pad<b.y+pad||a.y+pad>b.y+b.h-pad)}
-function jumpLoop(now){if(!jRun)return;const {ctx,w,h}=fit(jc),dt=Math.min(.03,(now-jLast)/1000||.016);jLast=now;if(jStrike==='idle'&&now>=jNext){jStrike='warning';jStrikeT=now;tone(330,.05,'square')}else if(jStrike==='warning'&&now-jStrikeT>=Math.max(240,560-jRound*17)){jStrike='strike';jStrikeT=now;tone(120,.08,'sawtooth')}else if(jStrike==='strike'&&now-jStrikeT>=420){scheduleHand(now)}
-ctx.clearRect(0,0,w,h);const floor=h*.78;const wall=ctx.createLinearGradient(0,0,0,floor);wall.addColorStop(0,'#fff3e5');wall.addColorStop(1,'#f8ead6');ctx.fillStyle=wall;ctx.fillRect(0,0,w,floor);ctx.fillStyle='#dfc39d';ctx.fillRect(0,floor,w,h-floor);ctx.fillStyle='#caa06a';ctx.fillRect(0,floor,w,5);
-const tx=w*.58,ty=h*.48,tw=w*.43;rounded(ctx,tx,ty,tw,18,9,'#8f5d39');ctx.fillStyle='#71462c';ctx.fillRect(tx+tw*.12,ty+18,16,h*.32);ctx.fillRect(tx+tw*.82,ty+18,16,h*.32);const lw=tw*.62,lh=lw*.55,lx=tx+tw*.22,ly=ty-lh+3;rounded(ctx,lx,ly,lw,lh,6,'#a9afb6');rounded(ctx,lx+5,ly+5,lw-10,lh-11,3,'#1b232a');rounded(ctx,lx-10,ty-2,lw+20,9,4,'#9ea4aa');ctx.fillStyle='#66707a';ctx.font='700 11px -apple-system';ctx.textAlign='center';ctx.fillText('NOTEBOOK',lx+lw/2,ly+lh*.56);
-if(jStrike==='warning'){ctx.save();ctx.globalAlpha=.22+.25*Math.abs(Math.sin(now/85));ctx.fillStyle='#ff394f';ctx.beginPath();ctx.ellipse(w*.50,h*.39,w*.18,h*.22,0,0,Math.PI*2);ctx.fill();ctx.restore();ctx.font=`900 ${Math.min(50,w*.11)}px system-ui`;ctx.textAlign='center';ctx.fillStyle='#f09b10';ctx.fillText('⚠️',w*.51,h*.28)}
-const hg=handGeom(w,h,now);drawHand(ctx,hg);const cg=catJumpGeom(w,h,now);drawCat(ctx,cg.pose,cg.x,cg.y,cg.size,false,cg.rot);
-if(jJump&&jStrike==='strike'&&!jHit){const catBox={x:cg.x+cg.size*.23,y:cg.y+cg.size*.20,w:cg.size*.55,h:cg.size*.58},handBox={x:hg.x+hg.wid*.10,y:hg.y+hg.hei*.15,w:hg.wid*.80,h:hg.hei*.66};if(overlap(catBox,handBox,8)){jHit=true;jJump=false;jLives--;lives(jl,jLives);toast(jt,'BONK!');tone(105,.13,'square');if(jLives<=0){endJump();return}else setTimeout(()=>{if(jRun)scheduleHand(performance.now())},320)}}
-if(jJump&&cg.p>=1&&!jHit){jJump=false;jScore++;jRound++;js.textContent=jScore;$('#roundLabel').textContent='ROUND '+jRound;toast(jt,'SAFE!');tone(760,.06,'triangle');scheduleHand(now+320)}
-jRAF=requestAnimationFrame(jumpLoop)}
-function doJump(){if(!jRun||jJump)return;jJump=true;jHit=false;jJumpStart=performance.now();tone(480,.035,'triangle')}
-function endJump(){jRun=false;cancelAnimationFrame(jRAF);const best=Math.max(jScore,+(localStorage.michelleJumpBest||0));localStorage.michelleJumpBest=best;$('#jumpSummary').textContent=`Safe ${jScore} · Best ${best}`;jo.classList.add('show')}
-tap(jc,doJump);$('#jumpRetry').addEventListener('click',startJump);
-window.addEventListener('resize',()=>{if(current==='ball')fit(bc);if(current==='jump')fit(jc)});
-document.addEventListener('visibilitychange',()=>{if(document.hidden){stopBall();stopJump()}});
-})();
-</script>
+<script src="game.js"></script>
 </body></html>
